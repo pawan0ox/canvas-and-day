@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>canvas with day</title>
+    <script src="day.js" defer></script>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <canvas id="canvas1"></canvas>
+
+    <div class="main">
+    
+      <h2>Today's date is:</h2><h2 id="date"></h2>
+      <h3>Enter Date, Get Day</h3>
+      <div class="daybox">
+        <h1 id="text">The day is&nbsp;</h1>
+        <span id="day">.....</span>
+      </div>
+
+      <div class="inputElement">
+        <form action="/">
+          <label for="year">Enter the year</label>
+          <input type="text" id="year" autocomplete="off" /><br /><br />
+          <label for="month">Enter the Month</label>
+          <input type="text" id="month" autocomplete="off" /><br /><br />
+          <label for="weekday">Enter the Day</label>
+          <input type="text" id="weekday" autocomplete="off" /> <br />
+          <br />
+          <div class="btnbox">
+            <button class="submitbtn" type="submit">Go</button>
+            <button type="reset" class="resetbtn">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="day_canvas.js"></script>
+  </body>
+</html>
